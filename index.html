@@ -1,4 +1,4 @@
-<!doctype html>
+  <!doctype html>
 <html lang="en-US">
 <head>
 <meta charset="utf-8">
@@ -13,6 +13,7 @@
 <div class="container"> 
   <!-- Navigation -->
   <header> <a href="">
+	  
     <h4 class="logo">The Cinema House</h4>
     </a>
     <nav>
@@ -20,22 +21,64 @@
        <li><a href="index.html">HOME</a></li>
         <li><a href="about.html">ABOUT</a></li>
         <li><a href="contact.html">CONTACT</a></li>
+		<li><a href="Cart.html">CART</a></li>  
       </ul>
     </nav>
   </header>
-  
- 	<div class="banner">
-		<img class="banner-image" src="images/banner.jpg">
-	</div>
 	
+	<div class="content-wrapper">
+ 		<div class="banner">
+		<img class="banner-image" src="images/banner.jpg" alt="">
+			<div class="text-wrapper">
+				<script src="Javascript/Javascript Welcome Tag.js"></script>
+			</div>
+		</div>
+	</div>	
+	 
   <section class="about" id="about">
     <h2 class="hidden">About</h2>
     <p class="text_column">We here at The Cinema House specialize in everything from telling Wedding storys with film to creating a Commercial for a product 						to be shared with the world. </p>
     <p class="text_column">We here also create content for more specific clients, we can create a film about your automotive vehicle whatever it is. We also 						create video production content for musicians </p>
     <p class="text_column">and tell a story about your song through film.The Cinema House strives to create the best content for you. Whatever the project is at whatever level, we will bring out it's 							  full potential. </p>
   </section>
-  <!-- Stats Gallery Section -->
-  <div class="gallery">
+  <!-- Location -->
+	 <button onclick="getGeoLocation()">Location</button>
+    <br><br>
+    <div style="display:none;">
+        <a href="#">Click Here</a>
+		
+		 <script src="Javascript/location.js"></script>
+	<!-- Stats Gallery Section -->
+		<section>	
+<div class="hero2">
+      <div class="slider">
+        <div class="slide-viewer">
+          <div class="slide-group" style="left: 0px;">
+            	<div class="slide slide-1" style="display: block; left: 0px;">
+			  		<img src="images/Untitled-3.jpg" alt="Judging">
+			 	</div>
+            	<div class="slide slide-2" style="left: 0px; display: none;">
+              		<img src="images/Wedding-in-vineyard.jpg" alt="Sudoku Time">
+            	</div>
+            	<div class="slide slide-3" style="left: 0px; display: none;">
+              		<img src="images/slide-3a.jpg" alt="Judging the neighbor">
+           		</div>
+           	<div class="slide slide-4" style="left: 0px; display: none;">
+              		<img src="images/slide-4a.jpg" alt="Salt o' The Sea"><p>salt o' the sea</p>
+           		</div>
+          	</div>
+        </div>
+		  <p>Gigi Stares in Judge, Izzy Doin a Sudoku, Gigi Judging Neighbor, Izzy Stares in Please Gib Many Treatos</p>
+        <div class="slide-buttons"><button type="button" class="slide-btn active">•</button><button type="button" class="slide-btn">•</button><button type="button" class="slide-btn">•</button><button type="button" class="slide-btn">•</button></div>
+      </div>
+</div>
+</section>
+    
+		<script src="Javascript/jquery-1.11.0.min.js"></script>
+		<script src="Javascript/slider.js"></script>
+<!--	Gallery -->
+	</div>
+	<div class="gallery">
 	   <div class="thumbnail">
       <h1 class="stats">WEDDINGS</h1>
       <h4>Wedding Film</h4>
@@ -70,8 +113,33 @@
       <h3>AUTOMOTIVE</h3>
       <img src="images/untitled-3.jpg" alt="" width="400" height="200"/>
       <p> This a compelling film we created of a clients Porche 911, some of the films shot where used later in a ad for Porche, this commercial was later  used as an ad placement for Porche's Spot on Superbowl 56.  </p>
+
+
     </article>
+	 <div id="info">
+	  <div id="hotelName"></div>
+	  <div id="roomRate"></div>
+	  <div id="specialRate"></div>
+	  <p>Book today and get more than 25% off a project when you book more than one project</p>
+	  <div id="offerEnds"></div>
+	  <script src="Javascript/Javascript Special Offer.js"></script>
+	</div>
   </footer>
+		
+	<div id="error"></div>
+		<form id="form" action="/" method="GET">
+  	<div>
+    	<label for="name">Name</label>
+    	<input id="name" name="name" type="text" required>
+  	</div>
+ 	<div>
+    	<label for="password">Password</label>
+    	<input id="password" name="password" type="password">
+  	</div>
+  	<button type="submit">Submit</button>
+			<script src="Javascript/events.js"></script>
+</form>
+
   <!-- Copyrights Section -->
   <div class="copyright">&copy;2022- <strong>Cinema House</strong></div>
 </div>

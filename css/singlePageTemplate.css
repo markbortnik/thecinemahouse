@@ -45,6 +45,22 @@ header nav ul {
 	list-style: none;
 	float: right;
 }
+.content-wrapper{
+	width: 100%;
+}
+.content-wrapper img{
+	width: 100%;
+}
+.text-wrapper {
+	width: 100%;
+	position: center;
+	margin-top: -19%;
+	margin-right: 200%;
+	color: white; 
+}
+.text-wrapper h2{
+	text-align: center;
+}
 nav ul li {
 	float: left;
 	color: #FFFFFF;
@@ -63,7 +79,7 @@ ul li:hover a {
 	color: #2C9AB7;
 }
 banner{
-width: 100%;
+width: 1000%;
 display:block; 
 height:150px;  
 border: solid black 1px; 
@@ -257,8 +273,250 @@ footer .footer_column p {
 }
 footer {
 	display: inline-block;
+	text-align: center;
 }
 .hidden {
 	display: none;
 }
 
+p {
+	text-align: center;
+}
+
+#info {
+    color: #2E2A2A;
+    font-family: "Gochi Hand";
+    font-style: normal;
+    border-color: #000000;
+    background-color: #fff;
+    background-size: 5px 5px;
+    background-attachment: fixed;
+    background-clip: content-box;
+    background-origin: content-box;
+    font-size: x-large;
+}
+#hotelName {
+    color: #2E2A2A;
+}
+#info #specialRate {
+    color: #2E2A2A;
+}
+#roomRate {
+    color: #FEFEFE;
+    text-decoration: line-through;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+#specialRate {
+    font-style: italic;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-variant: normal;
+    font-weight: bolder;
+}
+.hot {
+  background-color: #4983B3;
+  color: #fff;
+  text-shadow: 2px 2px 1px #000;
+  border-top: 1px solid #0863F0;
+  border-bottom: 1px solid #0863f0;}
+
+.cool {
+  background-color: #6cc0ac;
+  color: #fff;
+  text-shadow: 2px 2px 1px #3b6a5e;
+  border-top: 1px solid #7ee0c9;
+  border-bottom: 1px solid #3b6a5e;}
+
+.complete {
+  background-color: #999;
+  color: #fff;
+  background-image: url("../images/icon-trash.png");
+  background-position: right, center;
+  background-repeat: no-repeat;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #b0b0b0;
+  text-shadow: 2px 2px 1px #333;}
+
+.complete a {display:block;}
+
+.favorite {
+  background-image: url('../images/icon-heart.png');
+  background-position: right, center;
+  background-repeat: no-repeat;}
+
+em.seasonal
+ {
+  background-image: url('../images/icon-calendar.png');
+  background-position: left  center;
+  background-repeat: no-repeat;
+  padding-left: 30px;}
+
+
+/* FORM STYLES */
+
+form {
+  padding: 0 20px 20px 20px;}
+
+label {
+  color: #fff;
+  display: block;
+  margin: 10px 0 10px 0;
+  font-size: 24px;}
+
+input[type='text'], input[type='password'], textarea {
+  background-color: #999;
+  color: #333;
+  font-size: 24px;
+  width: 96%;
+  padding: 4px 6px;
+  border: 1px solid #999;
+  border-radius: 8px;}
+
+input[type='submit'], a.add, button, a.show {
+  background-color: #cb6868;
+  color: #f3dad1;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 10px;
+  margin-top: 10px;
+  font-family: 'Oswald', 'Futura', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;}
+
+input[type='submit'], a.add, button {
+  float: center;} 
+
+input[type='text']:focus, input[type='password']:focus, textarea:focus {
+  border: 1px solid #fff;
+  background-color: #fff;
+  outline: none;}
+
+input[type='submit']:hover, a.add:hover, a.show:hover {
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;}
+
+
+::-webkit-input-placeholder {color: #403c3b; font-family: arial, sans-serif;}
+:-moz-placeholder { /* Firefox 18- */ color: #403c3b; font-family: arial, sans-serif;}
+::-moz-placeholder {  /* Firefox 19+ */ color: #403c3b; font-family: arial, sans-serif;}
+:-ms-input-placeholder { color: #403c3b; font-family: arial, sans-serif;}
+
+
+textarea {
+  width: 96%;
+  height: 5em;
+  line-height: 1.4em;}
+
+select, option {
+  font-size: 16px;}
+
+#feedback, #termsHint {
+  color: #fff;
+  background-image: url('../images/warning.png');
+  background-repeat: no-repeat;
+  background-position: 2px 14px;
+  padding: 10px 0 0 22px;}
+
+#packageHint {
+  color: #fff;
+  background-image: url('../images/hint.png');
+  background-repeat: no-repeat;
+  background-position: 2px 5px;
+  padding-left: 22px;}
+
+label.selectbox {
+  display: inline;}
+
+label.checkbox {
+  display: inline;
+  font-size: 16px;}
+
+/* Link to show list */
+h2 a {
+  font-size: 12px; }
+
+a.show{
+  font-size: 12px; 
+  padding: 5px; 
+  letter-spacing: 0; 
+  position: relative;
+  top: -5px;
+  left: 10px;}
+
+/* form example */
+#newItemButton {padding: 10px 20px 75px 20px; display: none;}
+#newItemForm {padding-top: 20px;}
+#itemDescription {width: 360px;}
+#newItemForm input[type='submit'] {margin-top: 0; text-align: left;}
+
+/* Attributes example */
+#group {
+  margin: 10px;
+  border: 2px solid #fff;}
+
+/* Events object */
+.date, li i {
+  font-size: 12px;
+  padding-left: 8px;}
+
+
+/* Additional styles for position example */
+#slideAd {
+  width: 130px;
+  height: 60px;
+  background-color: #403c3b;
+  background-image: url('../images/adverlion.png');
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  color: #fff;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 25px 20px 10px 85px;
+  position: fixed;
+  bottom: 20px;
+  right: -235px;
+  text-transform: uppercase;}
+
+#footer {
+  background:none;
+  color: #fff;}
+
+/* Small screen:mobile */
+@media only screen and (max-width: 500px) {
+  body {
+      background-color: #403c3b;
+  }
+  #page {
+    max-width: 480px;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+  #page {
+    max-width: 480px;
+    margin: 20px auto 20px auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  #page {
+    max-width: 480px;
+    margin: 20px auto 20px auto;
+  }
+}
+/* Larger screens act like a demo for the app */
+@media only screen and (min-width: 960px) {
+  #page {
+    max-width: 480px;
+    margin: 20px auto 20px auto;
+  }
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
+  h1{
+    background-image: url(../images/2xkinglogo.png);
+    background-size: 72px 72px;
+  }
+}
